@@ -1,40 +1,53 @@
-@import '~antd/dist/antd.less';
+@import "~antd/dist/antd.less";
 
-.App {
-  text-align: center;
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: white !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.trigger .anticon svg {
+  color: white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.trigger:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fix {
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+
+  margin: 16px;
+}
+
+.site layout.site-layout-background {
+  background: #fff;
+
+}
+
+.site-page-header {
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+    0 1px 18px 0 rgb(0 0 0 / 12%);
+  background: #001529;
+}
+
+.ant-page-header-heading-title {
+  color: white !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+.ant-layout-sider-children {
+  height: 100%;
+  margin-top: -0.1 px;
+  padding-top: 0.1 px;
 }
